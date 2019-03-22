@@ -153,8 +153,8 @@
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th>CUSTOMER</th>
-				<th>PERSON</th>
+				<th>CUSTOMER [A]</th>
+				<th>PERSON [B]</th>
 				<th>DISTANCIA</th>
 				<th>TIEMPO</th>
 				<th>RUTA MANEJANDO</th>
@@ -164,8 +164,8 @@
 	
 		<tbody>
 			<tr th:each="tabla: ${tabla}">
-				<td th:text=${tabla.Persona}></td>
 				<td th:text=${tabla.Cliente}></td>
+				<td th:text=${tabla.Persona}></td>
 				<td th:text=${tabla.Distancia}></td>
 				<td th:text=${tabla.Tiempo}></td>
 				<td>

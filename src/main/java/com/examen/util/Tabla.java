@@ -10,6 +10,7 @@ public class Tabla implements Serializable {
 	private String Cliente;
 	private String Distancia;
 	private String Tiempo;
+	private String PersonaCliente;
 	
 	
 	
@@ -19,6 +20,23 @@ public class Tabla implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+	
+
+	public Tabla(String persona, String cliente, String distancia, String tiempo, String personaCliente) {
+		super();
+		Persona = persona;
+		Cliente = cliente;
+		Distancia = distancia;
+		Tiempo = tiempo;
+		PersonaCliente = personaCliente;
+	}
+	
+	
+
+
+
+
 	public Tabla(String persona, String cliente, String distancia, String tiempo) {
 		super();
 		Persona = persona;
@@ -26,6 +44,10 @@ public class Tabla implements Serializable {
 		Distancia = distancia;
 		Tiempo = tiempo;
 	}
+
+
+
+
 	public String getPersona() {
 		return Persona;
 	}
@@ -49,6 +71,11 @@ public class Tabla implements Serializable {
 	}
 	public void setTiempo(String tiempo) {
 		Tiempo = tiempo;
+	}
+	
+	public String getPersonaCliente()
+	{
+		return this.Persona.replace(" ","")+this.Cliente.replace(" ","");
 	}
 	
 	
